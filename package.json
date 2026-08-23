@@ -1,0 +1,16 @@
+{
+  "name": "puolimatkankrouvi.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/puolimatkankrouvi/puolimatkankrouvi.github.io.git",
+  "author": "<cde_1414@yahoo.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "7.2.4"
+  }
+}
