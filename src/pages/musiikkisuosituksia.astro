@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/baseLayout.astro"
+import "../css/global.css";
 
 layout: "/layouts/baseLayout.astro"
 ---
@@ -56,9 +57,14 @@ layout: "/layouts/baseLayout.astro"
     ul {
         list-style-type: none;
         font-size: 1.25rem;
+        padding: 0;
     }
 
     h2 {
         margin-top: 2rem;
+    }
+
+    li {
+        padding: 0.2rem;
     }
 </style>
