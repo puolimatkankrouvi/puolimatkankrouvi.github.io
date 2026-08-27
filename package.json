@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/puolimatkankrouvi/puolimatkankrouvi.github.io.git",
-  "author": "<cde_1414@yahoo.com>",
+  "author": "puolimatkankrouvi",
   "license": "MIT",
   "scripts": {
     "dev": "astro dev",
