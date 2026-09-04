@@ -1,12 +1,13 @@
 ---
 import BaseLayout from "../layouts/baseLayout.astro";
+import List from "../components/List.astro";
 import "../css/global.css";
 
 layout: "layouts/baseLayout.astro";
 ---
 
 <BaseLayout title="Leffoja" headerTitle="Leffoja | puolimatkankrouvi">
-    <ul>
+    <List>
         <li>Dersu Usala</li>
         <li>The Truman Show</li>
         <li>1997 Seitsemän</li>
@@ -51,9 +52,10 @@ layout: "layouts/baseLayout.astro";
         <li>Lionheart</li>
         <li>Team America – maailman poliisi</li>
         <li>Backrooms</li>
-    </ul>
+    </List>
+
     <h2>TV-sarjat</h2>
-    <ul>
+    <List>
         <li>Kummeli Gaala</li>
         <li>Myllyrinne Company</li>
         <li>Lapin Kullan Kimallus</li>
@@ -65,15 +67,17 @@ layout: "layouts/baseLayout.astro";
         <li>Jopet Show kausi 1</li>
         <li>Itse Valtiaat</li>
         <li>Pokemon Horizons</li>
-    </ul>
+    </List>
+
     <h2>Vanhat</h2>
-    <ul>
+    <List>
         <li>Seitsemäs Sinetti</li>
         <li>Noidantappajat</li>
         <li>Uuno Turhapuro Menettää Muistinsa</li>
-    </ul>
+    </List>
+
     <h2>Muumilaakson Tarinoita-jaksoja</h2>
-    <ul>
+    <List>
         <li>Aavelaiva</li>
         <li>Satumainen Smaragdi</li>
         <li>Hiekkaveistoksia</li>
@@ -92,21 +96,11 @@ layout: "layouts/baseLayout.astro";
         <li>Muumipapan Muistelmat I ja II</li>
         <li>Kohti Etelää</li>
         <li>Kadonneet lapset</li>
-    </ul>
+    </List>
 </BaseLayout>
 
 <style>
-    ul {
-        list-style-type: none;
-        font-size: 1.25rem;
-        padding: 0;
-    }
-
     h2 {
         margin-top: 2rem;
-    }
-
-    li {
-        padding: 0.2rem;
     }
 </style>
