@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/baseLayout.astro";
 import List from "../components/List.astro";
 import "../css/global.css";
+import Subtitle from "../components/Subtitle.astro";
 
 layout: "layouts/baseLayout.astro";
 ---
@@ -54,7 +55,7 @@ layout: "layouts/baseLayout.astro";
         <li>Backrooms</li>
     </List>
 
-    <h2>TV-sarjat</h2>
+    <Subtitle>TV-sarjat</Subtitle>
     <List>
         <li>Kummeli Gaala</li>
         <li>Myllyrinne Company</li>
@@ -69,14 +70,14 @@ layout: "layouts/baseLayout.astro";
         <li>Pokemon Horizons</li>
     </List>
 
-    <h2>Vanhat</h2>
+    <Subtitle>Vanhat</Subtitle>
     <List>
         <li>Seitsemäs Sinetti</li>
         <li>Noidantappajat</li>
         <li>Uuno Turhapuro Menettää Muistinsa</li>
     </List>
 
-    <h2>Muumilaakson Tarinoita-jaksoja</h2>
+    <Subtitle>Muumilaakson Tarinoita-jaksoja</Subtitle>
     <List>
         <li>Aavelaiva</li>
         <li>Satumainen Smaragdi</li>
@@ -100,7 +101,4 @@ layout: "layouts/baseLayout.astro";
 </BaseLayout>
 
 <style>
-    h2 {
-        margin-top: 2rem;
-    }
 </style>
