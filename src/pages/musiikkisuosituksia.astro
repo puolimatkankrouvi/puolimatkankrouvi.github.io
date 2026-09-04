@@ -1,5 +1,7 @@
 ---
 import BaseLayout from "../layouts/baseLayout.astro"
+import List from "../components/List.astro";
+import Subtitle from "../components/Subtitle.astro";
 import "../css/global.css";
 
 layout: "/layouts/baseLayout.astro";
@@ -7,7 +9,7 @@ layout: "/layouts/baseLayout.astro";
 
 <BaseLayout title="Musiikkisuosituksia" headerTitle="Musiikkisuosituksia | puolimatkankrouvi">
 
-    <ul>
+    <List>
         <li>Smack – Run Rabbit, Run</li>
         <li>Dr. Don – Vodka Tonight</li>
         <li>SIG – Leijailen</li>
@@ -78,35 +80,35 @@ layout: "/layouts/baseLayout.astro";
         <li>Discharge – Hear Nothing See Nothing Say Nothing</li>
         <li>Henry Theel – Köyhä Laulaja</li>
         <li>Dennis Waterman – It's Alright</li>
-    </ul>
+    </List>
     
-    <h2>Outoja:</h2>
-    <ul>
+    <Subtitle>Outoja:</Subtitle>
+    <List>
         <li>MC Puhuva Pää – Kädet Ilmaan</li>
         <li>NRJ Aamupojat – Beibi älä vonkaa</li>
         <li>Kake Singers – Me halutaan olla…</li>
         <li>Mulle Meck  – 2020</li>
         <li>Käärijä – Menoo (Get On)</li>
         <li>Napoleon XIV – They're Coming to Take Me Away, Ha-Haaa!</li>
-    </ul>
+    </List>
     
-    <h2>Vanhat:</h2>
-    <ul>
+    <Subtitle>Vanhat:</Subtitle>
+    <List>
         <li>Dirty Loops – Turbo</li>
         <li>Eddit Boyd – Five Long Years</li>
         <li>Janos Valmunen – Bussipysäkillä</li>
         <li>Blue Öyster Cult – Burnin' For You</li>
-    </ul>
+    </List>
     
-    <h2>Balladit:</h2>
-    <ul>    
+    <Subtitle>Balladit:</Subtitle>
+    <List>    
         <li>Dream Theater – Space Dye Vest</li>
         <li>Lady Gaga – Speechless Acoustic</li>
         <li>Scorpions – Holiday</li>
-    </ul>
+    </List>
 
-    <h2>Metal:</h2>
-    <ul>
+    <Subtitle>Metal:</Subtitle>
+    <List>
         <li>Kimmo Kuusniemi Band – Moottorilinnut</li>
         <li>Converge – Dark Horse (crossover punk)</li>
         <li>Iron Maiden – Judas be My Guide</li>
@@ -128,21 +130,11 @@ layout: "/layouts/baseLayout.astro";
         <li>Arch Enemy – Blood Dynasty</li>
         <li>Horna</li>
         <li>Unleashed – Jotunheim</li>
-    </ul>
+    </List>
 
 </BaseLayout>
 
 <style>
-    ul {
-        list-style-type: none;
-        font-size: 1.25rem;
-        padding: 0;
-    }
-
-    h2 {
-        margin-top: 2rem;
-    }
-
     li {
         padding: 0.2rem;
     }

@@ -1,34 +1,29 @@
 ---
 import BaseLayout from "../layouts/baseLayout.astro"
+import List from "../components/List.astro";
 import "../css/global.css";
 
 layout: "/layouts/baseLayout.astro";
+import { fontSize } from "../css/constants";
 ---
 
 <BaseLayout title="Puolimatkankrouvi" headerTitle="Etusivu | puolimatkankrouvi">
     <p>Nettisivu omaan henkilökohtaiseen käyttööni.</p>
-    <ul>
-       <li>
+    <List>
+        <li>
             <a href="/musiikkisuosituksia">Musiikkisuosituksia</a>
-       </li> 
-    </ul>
+        </li> 
+    </List>
 </BaseLayout>
 
-<style>
+<style define:vars={{ fontSize }}>
     a {
-        font-size: 1.25rem;
+        font-size: var(--fontSize);
     }
 
     p {
-        font-size: 1.25rem;
-    }
-
-    p + ul {
-        margin-top: 2rem;
-    }
-
-    ul {
-        list-style-type: none;
+        font-size: var(--fontSize);
+        margin-bottom: 2rem;
     }
 
     li {

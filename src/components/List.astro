@@ -1,0 +1,15 @@
+---
+import { fontSize } from "../css/constants";
+---
+
+<ul>
+    <slot />
+</ul>
+
+<style define:vars={{ fontSize }}>
+    ul {
+        list-style-type: none;
+        font-size: var(--fontSize);
+        padding: 0;
+    }
+</style>
