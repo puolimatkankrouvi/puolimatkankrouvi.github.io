@@ -3,3 +3,15 @@ Disallow: /
 
 User-agent: archive.org_bot
 Disallow: /
+
+User-agent: ia_archiver-web.archive.org
+Disallow: /
+
+User-agent: Archive-It
+Disallow: /
+
+User-agent: heritrix
+Disallow: /
+
+User-agent: special_archiver
+Disallow: /
