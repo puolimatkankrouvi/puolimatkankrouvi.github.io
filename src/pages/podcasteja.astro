@@ -2,19 +2,14 @@
 import BaseLayout from "../layouts/baseLayout.astro";
 import List from "../components/List.astro";
 import "../css/global.css";
+import Li from "../components/Li.astro";
 
 layout: "layouts/baseLayout.astro";
 ---
 
 <BaseLayout title="Podcasteja" headerTitle="Podcasteja | puolimatkankrouvi">
     <List>
-        <li>Helsingin Yliopiston Tiedepodcast</li>
-        <li>Herman & Toivonen</li>
+        <Li>Helsingin Yliopiston Tiedepodcast</Li>
+        <Li>Herman & Toivonen</Li>
     </List>
 </BaseLayout>
-
-<style>
-    li {
-        padding: 0.2rem;
-    }
-</style>
