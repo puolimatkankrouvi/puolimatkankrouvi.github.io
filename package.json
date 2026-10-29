@@ -11,7 +11,7 @@
     "preview": "astro preview"
   },
   "dependencies": {
-    "astro": "7.3.5"
+    "astro": "7.4.4"
   },
   "packageManager": "yarn@4.18.1"
 }
